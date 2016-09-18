@@ -1,0 +1,18 @@
+before_install:
+  - wget http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-3ubuntu0.4_amd64.deb
+  - sudo dpkg -i libicu52_52*.deb
+  - npm i -g npm@3
+  - npm cache clean
+language: node_js
+node_js:
+  - "6.0"
+  - "5.6"
+  - "4.3"
+script:
+  - cp env.example.json env.json
+  - npm run env
+  - npm test
+  - npm run build
+after_script:
+  - npm install coveralls
+  - npm run coveralls
