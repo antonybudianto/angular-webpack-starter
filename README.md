@@ -53,6 +53,13 @@ Go to the starter directory and install the packages:
 npm install
 ```
 
+Then copy `env.example.json` and rename it as `env.json`, and then run
+```bash
+npm run env
+```
+
+This will generate a constant file based on your `env.json`, for more [details](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
+
 ## Start
 Let's start up the server, run:
 ```bash
