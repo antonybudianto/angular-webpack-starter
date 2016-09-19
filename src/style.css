@@ -1,3 +1,7 @@
+body {
+    background-color: gray;
+}
+
 .center-fix {
     position: fixed;
     top: 50%;

@@ -1,8 +1,7 @@
 var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
+var NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 
 var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
@@ -28,9 +27,6 @@ module.exports = webpackMerge(commonConfig, {
 
   plugins: [
     new NamedModulesPlugin(),
-    new CopyWebpackPlugin([{
-      from:  helpers.root('src/public')
-    }]),
     new webpack.NoErrorsPlugin(),
 
     // TODO: Webpack 2 issue https://github.com/webpack/webpack/issues/2644
