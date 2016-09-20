@@ -5,23 +5,22 @@ module.exports = {
   devtool: 'inline-source-map',
 
   resolve: {
-    extensions: ['', '.ts', '.js'],
-    modulesDirectories: ['node_modules', 'src']
+    extensions: ['.ts', '.js'],
+    modules: ['node_modules', helpers.root('src')]
   },
 
   module: {
-    postLoaders: [
-       {
-          test: /\.(js|ts)$/,
-          loader: 'istanbul-instrumenter-loader',
-          include: helpers.root('src'),
-          exclude: [
-            /\.(e2e|spec)\.ts$/,
-            /node_modules/
-          ]
-        }
-    ],
-    loaders: [
+    rules: [
+      {
+        test: /\.(js|ts)$/,
+        enforce: 'post',
+        loader: 'istanbul-instrumenter-loader',
+        include: helpers.root('src'),
+        exclude: [
+          /\.(e2e|spec)\.ts$/,
+          /node_modules/
+        ]
+      },
       {
         test: /\.ts$/,
         loader: 'awesome-typescript-loader',

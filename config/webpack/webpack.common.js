@@ -15,17 +15,16 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ['.js', '.ts']
   },
 
   module: {
-    preLoaders: [
+    rules: [
       {
+        enforce: 'pre',
         test: /\.ts$/,
         loader: 'tslint'
-      }
-    ],
-    loaders: [
+      },
       {
         test: /\.ts$/,
         loaders: [
@@ -79,11 +78,16 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'src/public/index.html'
-    })
-  ],
+    }),
 
-  tslint: {
-    emitError: false,
-    failOnHint: false
-  }
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        tslint: {
+          emitError: false,
+          failOnHint: false
+        }
+      }
+    })
+  ]
+
 };
