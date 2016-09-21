@@ -66,7 +66,7 @@ Let's start up the server, run:
 npm start
 ```
 
-and done! The browser will popup and you can start developing Angular!
+and done! Open a browser and go to http://localhost:8080 and you can start developing Angular!
 Every changes to the file will refresh the browser automatically
 and it'll also compile your changed TypeScripts files to Javascript files.
 
