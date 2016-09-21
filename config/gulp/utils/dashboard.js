@@ -22,9 +22,9 @@ var StarterDashboard = {
 
         console.log('============ Angular Webpack Starter ============');
         console.log('Current environment: ' + util.colors[color](envConfig.ENV));
-        console.log('- Change environment via --env or NODE_ENV');
+        console.log('- Change environment via NODE_ENV');
         console.log(envStatusMessage);
-        console.log('===========================================');
+        console.log('=================================================');
     }
 };
 
