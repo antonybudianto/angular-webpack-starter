@@ -21,10 +21,6 @@ module.exports = webpackMerge(commonConfig, {
     chunkFilename: '[id].[hash].chunk.js'
   },
 
-  htmlLoader: {
-    minimize: false // workaround for ng2
-  },
-
   plugins: [
     new NamedModulesPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -37,6 +33,13 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.DefinePlugin({
       'process.env': {
         'ENV': JSON.stringify(ENV)
+      }
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        htmlLoader: {
+          minimize: false // workaround for ng2
+        }
       }
     })
   ]
