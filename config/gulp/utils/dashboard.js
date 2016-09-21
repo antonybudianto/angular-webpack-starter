@@ -20,7 +20,7 @@ var StarterDashboard = {
             envStatusMessage = '- env.json is not detected. You can create one on project root';
         }
 
-        console.log('============ Angular 2 Starter ============');
+        console.log('============ Angular Webpack Starter ============');
         console.log('Current environment: ' + util.colors[color](envConfig.ENV));
         console.log('- Change environment via --env or NODE_ENV');
         console.log(envStatusMessage);
