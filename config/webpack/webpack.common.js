@@ -22,7 +22,7 @@ module.exports = {
     rules: [
       {
         enforce: 'pre',
-        test: /\.ts$/,
+        test: /^((?!(ngfactory|shim)).)*ts$/,
         loader: 'tslint'
       },
       {
