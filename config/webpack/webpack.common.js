@@ -1,12 +1,12 @@
-var webpack = require('webpack');
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var helpers = require('./helpers');
-var constants = require('./constants');
+const helpers = require('./helpers');
+const constants = require('./constants');
 
-var isProd = process.env.npm_lifecycle_event === 'build';
+const isProd = process.env.npm_lifecycle_event === 'build';
 
 module.exports = {
   entry: {
