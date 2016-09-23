@@ -4,6 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var helpers = require('./helpers');
+var constants = require('./constants');
 
 var isProd = process.env.npm_lifecycle_event === 'build';
 
@@ -68,7 +69,7 @@ module.exports = {
 
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
-      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+      constants.CONTEXT_REPLACE_REGEX,
       helpers.root('./src') // location of your src
     ),
 
@@ -77,6 +78,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
+      favicon: 'src/favicon.ico',
       template: 'src/public/index.html'
     }),
 

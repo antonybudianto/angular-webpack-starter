@@ -1,5 +1,8 @@
-var helpers = require('./helpers');
+var webpack = require('webpack');
 var path = require('path');
+
+var helpers = require('./helpers');
+var constants = require('./constants');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -54,5 +57,13 @@ module.exports = {
         loader: 'raw'
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.ContextReplacementPlugin(
+      // The (\\|\/) piece accounts for path separators in *nix and Windows
+      constants.CONTEXT_REPLACE_REGEX,
+      helpers.root('./src') // location of your src
+    )
+  ]
 }
