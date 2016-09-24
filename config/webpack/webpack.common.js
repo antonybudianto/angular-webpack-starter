@@ -85,8 +85,8 @@ module.exports = {
     new webpack.LoaderOptionsPlugin({
       options: {
         tslint: {
-          emitError: false,
-          failOnHint: false
+          emitError: true,
+          failOnHint: true
         }
       }
     })
