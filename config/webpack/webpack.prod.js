@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 
 const commonConfig = require('./webpack.common.js');
@@ -23,7 +22,6 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   plugins: [
-    new NamedModulesPlugin(),
     new webpack.NoErrorsPlugin(),
 
     // TODO: Webpack 2 issue https://github.com/webpack/webpack/issues/2644
