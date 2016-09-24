@@ -65,7 +65,7 @@
     "@angular/platform-server": "2.0.1",
     "@angular/router": "3.0.1",
     "@types/core-js": "0.9.34",
-    "@types/jasmine": "2.2.33",
+    "@types/jasmine": "2.2.34",
     "@types/lodash": "4.14.36",
     "@types/node": "6.0.40",
     "angular2-router-loader": "^0.2.2",
@@ -95,7 +95,7 @@
     "karma-source-map-support": "^1.2.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "1.8.0",
-    "lodash": "^4.15.0",
+    "lodash": "^4.16.1",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.12",
     "raw-loader": "^0.5.1",
@@ -110,7 +110,7 @@
     "typings": "^1.4.0",
     "webpack": "2.1.0-beta.25",
     "webpack-merge": "^0.14.1",
-    "zone.js": "^0.6.21"
+    "zone.js": "^0.6.25"
   },
   "devDependencies": {
     "@types/protractor": "1.5.20",
