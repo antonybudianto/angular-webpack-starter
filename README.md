@@ -18,7 +18,7 @@ This starter contains almost everything you need to start developing [Angular](h
 ### Why choose this starter?
 - Extensible via [ngstarter extensions](https://github.com/ngstarter)
 - Complete workflow from serve, lint, unit test, e2e test, to bundling
-- Support file-based and strong-typed [Environment Variables](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
+- Support dotenv [Environment Variables](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
 - 100% code coverage
 - 100% [CI/CD](https://github.com/antonybudianto/angular-webpack-starter/wiki/Continuous-Integration) pipeline ready
 - No global package installation
@@ -53,12 +53,7 @@ Go to the starter directory and install the packages:
 npm install
 ```
 
-Then copy `env.example.json` and rename it as `env.json`, and then run
-```bash
-npm run env
-```
-
-This will generate a constant file based on your `env.json`, for more [details](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
+Then copy `.env.example` and rename it as `.env`. For more [details](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
 
 ## Start
 Let's start up the server, run:

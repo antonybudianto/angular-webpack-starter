@@ -1,4 +1,4 @@
-env.json
+.env
 .idea/
 /coverage
 /node_modules

@@ -1,5 +1,3 @@
-var envConfig = require('./utils/env');
-
 module.exports = function () {
     var root = '',
         build = root + 'dist/',

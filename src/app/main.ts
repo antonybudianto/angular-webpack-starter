@@ -5,7 +5,7 @@ import { AppModule } from './app.module';
 
 declare var process: any;
 
-if (process.env.ENV === 'production') {
+if (process.env.APP_ENV === 'production') {
     enableProdMode();
 }
 

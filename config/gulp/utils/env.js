@@ -1,3 +1,4 @@
+var env = require('dotenv').config();
 var argv = require('yargs').argv;
 
 var ENVS = {
@@ -6,7 +7,7 @@ var ENVS = {
     TEST: 'testing'
 };
 
-var ENV = argv.env || process.env.NODE_ENV || ENVS.DEV;
+var ENV = process.env.APP_ENV || ENVS.DEV;
 
 module.exports = {
     ENV: ENV,

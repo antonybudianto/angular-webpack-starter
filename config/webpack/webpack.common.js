@@ -1,5 +1,7 @@
+const env = require('dotenv').config();
 const webpack = require('webpack');
 const path = require('path');
+const _ = require('lodash');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -7,6 +9,7 @@ const helpers = require('./helpers');
 const constants = require('./constants');
 
 const isProd = process.env.npm_lifecycle_event === 'build';
+const envMap = _.mapValues(env, v => JSON.stringify(v));
 
 module.exports = {
   entry: {
@@ -65,6 +68,10 @@ module.exports = {
         jQuery: 'jquery',
         $: 'jquery',
         jquery: 'jquery'
+    }),
+
+    new webpack.DefinePlugin({
+      'process.env': envMap
     }),
 
     new webpack.ContextReplacementPlugin(

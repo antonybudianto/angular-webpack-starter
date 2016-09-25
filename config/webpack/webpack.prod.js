@@ -6,7 +6,7 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const commonConfig = require('./webpack.common.js');
 const helpers = require('./helpers');
 
-const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
+const ENV = process.env.APP_ENV || 'production';
 
 module.exports = webpackMerge(commonConfig, {
   devtool: 'source-map',
@@ -31,7 +31,7 @@ module.exports = webpackMerge(commonConfig, {
     new ExtractTextPlugin('[name].[hash].css'),
     new webpack.DefinePlugin({
       'process.env': {
-        'ENV': JSON.stringify(ENV)
+        'APP_ENV': JSON.stringify(ENV)
       }
     }),
     new webpack.LoaderOptionsPlugin({

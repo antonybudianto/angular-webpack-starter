@@ -1,8 +1,6 @@
-var envVars = require('../utils/env-vars'),
-    envConfig = require('../utils/env'),
+var envConfig = require('../utils/env'),
     util = require('gulp-util'),
-    _ = require('lodash'),
-    envStatusMessage;
+    _ = require('lodash');
 
 var color;
 var colorMap = {
@@ -13,17 +11,9 @@ color = colorMap[envConfig.ENV] || 'bgMagenta';
 
 var StarterDashboard = {
     show: function() {
-        if (envVars) {
-            envStatusMessage = '- env.json is detected. ' + _.toArray(envVars).length +
-                ' values loaded.';
-        } else {
-            envStatusMessage = '- env.json is not detected. You can create one on project root';
-        }
-
         console.log('============ Angular Webpack Starter ============');
         console.log('Current environment: ' + util.colors[color](envConfig.ENV));
-        console.log('- Change environment via NODE_ENV');
-        console.log(envStatusMessage);
+        console.log('- Change environment by editing APP_ENV on .env');
         console.log('=================================================');
     }
 };
