@@ -4,6 +4,3 @@ var gulp = require('gulp'),
     dashboard = require('./config/gulp/utils/dashboard');
 
 dashboard.show();
-
-/* Default task */
-gulp.task('default', ['serve-dev']);

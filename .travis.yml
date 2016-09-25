@@ -9,8 +9,7 @@ node_js:
   - "5.6"
   - "4.3"
 script:
-  - cp env.example.json env.json
-  - npm run env
+  - cp .env.travis .env
   - npm test
   - npm run build
 after_script:
