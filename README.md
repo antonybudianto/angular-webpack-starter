@@ -18,7 +18,7 @@ This starter contains almost everything you need to start developing [Angular](h
 ### Why choose this starter?
 - Extensible via [ngstarter extensions](https://github.com/ngstarter)
 - Complete workflow from serve, lint, unit test, e2e test, to bundling
-- Support dotenv [Environment Variables](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
+- Support [dotenv](https://www.npmjs.com/package/dotenv) [Environment Variables](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
 - 100% code coverage
 - 100% [CI/CD](https://github.com/antonybudianto/angular-webpack-starter/wiki/Continuous-Integration) pipeline ready
 - No global package installation
