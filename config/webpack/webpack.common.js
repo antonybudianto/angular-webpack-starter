@@ -1,4 +1,4 @@
-const env = require('dotenv').config();
+const env = require('dotenv').config({ silent: true });
 const webpack = require('webpack');
 const path = require('path');
 const _ = require('lodash');

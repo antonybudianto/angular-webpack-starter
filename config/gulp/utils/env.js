@@ -1,4 +1,4 @@
-var env = require('dotenv').config();
+var env = require('dotenv').config({ silent: true });
 var argv = require('yargs').argv;
 
 var ENVS = {
