@@ -3,9 +3,7 @@ import { platformBrowser } from '@angular/platform-browser';
 
 import { AppModuleNgFactory } from '../compiled/src/app/app.module.ngfactory';
 
-declare var process: any;
-
-if (process.env.ENV === 'production') {
+if (process.env.APP_ENV === 'production') {
     enableProdMode();
 }
 
