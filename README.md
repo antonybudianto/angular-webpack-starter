@@ -22,6 +22,7 @@ This starter contains almost everything you need to start developing [Angular](h
 - 100% code coverage
 - 100% [CI/CD](https://github.com/antonybudianto/angular-webpack-starter/wiki/Continuous-Integration) pipeline ready
 - No global package installation
+- You can tune it as you wish, no blackbox
 
 ### What's included?
 * [npm](https://www.npmjs.com/) for package manager

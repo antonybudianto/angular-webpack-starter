@@ -1,0 +1,17 @@
+.badge:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+.list-options {
+    vertical-align: middle;
+    display: inline-block;
+}
+[hidden] {
+    display: none;
+}
+.ng-valid[required] {
+    border-left: 5px solid #42A948; /* green */
+}
+.ng-invalid:not(form) {
+    border-left: 5px solid orange; /* orange */
+}
