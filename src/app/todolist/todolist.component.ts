@@ -4,7 +4,10 @@ import { Todo } from './todo.model';
 
 @Component({
     selector: 'as-todolist',
-    templateUrl: 'todolist.html'
+    templateUrl: 'todolist.component.html',
+    styleUrls: [
+        'todolist.component.css'
+    ]
 })
 export class TodolistComponent {
     public todo: Todo;
