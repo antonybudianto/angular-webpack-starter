@@ -119,7 +119,6 @@
     "protractor": "4.0.9",
     "ts-node": "^1.3.0",
     "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "^2.1.0-beta.6",
-    "yargs": "^5.0.0"
+    "webpack-dev-server": "^2.1.0-beta.6"
   }
 }
