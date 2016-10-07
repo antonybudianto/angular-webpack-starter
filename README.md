@@ -28,7 +28,6 @@ This starter contains almost everything you need to start developing [Angular](h
 * [npm](https://www.npmjs.com/) for package manager
 * [TypeScript](http://www.typescriptlang.org/) for the base language
   * with [Typings](https://github.com/typings/typings) for TypeScript definition manager
-* [Gulp](http://gulpjs.com/) for grunt tasks
 * [Webpack Dev Server](https://www.browsersync.io/) for development server & reload capability
 * [Lite Server](https://github.com/johnpapa/lite-server) for production build server
 * [Codelyzer](https://github.com/mgechev/codelyzer) for static code analyzer
@@ -43,8 +42,6 @@ Please visit the [wiki](https://github.com/antonybudianto/angular-webpack-starte
 You need to have [Node.js and npm](https://nodejs.org/en/)
 - Support Node v4 - latest
 - Support npm v3 - latest
-
-[Global Gulp CLI](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) is not required, but a nice to have during development.
 
 ## Installation
 Download the starter from [releases page](https://github.com/antonybudianto/angular-webpack-starter/releases)
