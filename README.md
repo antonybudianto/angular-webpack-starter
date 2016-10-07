@@ -29,7 +29,7 @@ This starter contains almost everything you need to start developing [Angular](h
 * [TypeScript](http://www.typescriptlang.org/) for the base language
   * with [Typings](https://github.com/typings/typings) for TypeScript definition manager
 * [Gulp](http://gulpjs.com/) for grunt tasks
-* [Webpack Dev Server](https://www.browsersync.io/) for development server & reload capability
+* [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) for development server & reload capability
 * [Lite Server](https://github.com/johnpapa/lite-server) for production build server
 * [Codelyzer](https://github.com/mgechev/codelyzer) for static code analyzer
 * [Karma](http://karma-runner.github.io/) for test-runner
