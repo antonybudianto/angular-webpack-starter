@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { appRoutingProviders, routing } from './app.routing';
+import { appRoutingProviders, appRoutes } from './app.routes';
 import { NavbarModule } from './shared';
 import { HomeModule } from './home/home.module';
 
@@ -14,7 +15,7 @@ import { HomeModule } from './home/home.module';
         BrowserModule,
         NavbarModule,
         HomeModule,
-        routing
+        RouterModule.forRoot(appRoutes)
     ],
     providers: [ appRoutingProviders ],
     bootstrap: [ AppComponent ]

@@ -10,6 +10,7 @@ node_js:
   - "4.3"
 script:
   - cp .env.travis .env
+  - npm run stat
   - npm test
   - npm run build
 after_script:
