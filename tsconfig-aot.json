@@ -9,7 +9,6 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "baseUrl": "./src",
     "outDir": "output",
     "typeRoots": [
       "node_modules/@types"
