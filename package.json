@@ -101,7 +101,7 @@
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.13",
     "raw-loader": "^0.5.1",
-    "remap-istanbul": "~0.6.4",
+    "remap-istanbul": "~0.7.0",
     "rimraf": "^2.5.4",
     "rxjs": "5.0.0-beta.12",
     "source-map-loader": "^0.1.5",
@@ -121,6 +121,6 @@
     "protractor": "4.0.9",
     "ts-node": "^1.4.2",
     "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "^2.1.0-beta.8"
+    "webpack-dev-server": "^2.1.0-beta.9"
   }
 }
