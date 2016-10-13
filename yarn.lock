@@ -36,12 +36,6 @@
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.1.0.tgz#f53b2234a460def5f9e718bb812b91a0a5f6c1e7"
 
-"@angular/platform-server@~2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-2.1.0.tgz#8e813c32d0da7b3709919055d0ae96a4104bb027"
-  dependencies:
-    parse5 "^2.2.1"
-
 "@angular/router@~3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.1.0.tgz#14a496411142d29744b85996b4c4dd7e0eb76029"
@@ -3543,10 +3537,6 @@ parse-json@^2.2.0:
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
   dependencies:
     error-ex "^1.2.0"
-
-parse5@^2.2.1:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-2.2.2.tgz#27f04785e9aee58aa824bc0a31c3049c3e39c51e"
 
 parsejson@0.0.1:
   version "0.0.1"
