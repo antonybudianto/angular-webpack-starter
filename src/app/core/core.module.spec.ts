@@ -21,9 +21,7 @@ class TestComponent {
         TestComponent
     ]
 })
-class TestModule {
-    constructor() {}
-}
+class TestModule {}
 
 describe('CoreModule', () => {
     beforeEach(() => {
@@ -40,8 +38,10 @@ describe('CoreModule', () => {
         expect(moduleWithProviders).toBeDefined();
     });
 
-    it('should throw error when CoreModule created twice', () => {
-        TestBed.createComponent(TestComponent);
+    it('should not throw error when CoreModule created twice', () => {
+        expect(function() {
+            TestBed.createComponent(TestComponent);
+        }).not.toThrowError();
     });
 });
 
@@ -55,13 +55,10 @@ describe('CoreModule', () => {
         });
     });
 
-    it('should return module providers', () => {
-        const moduleWithProviders = CoreModule.forRoot();
-        expect(moduleWithProviders).toBeDefined();
-    });
-
     it('should throw error when CoreModule created twice', () => {
         TestBed.createComponent(TestComponent);
+
+        // mimic lazy loaded own injector
         expect(function() {
             new CoreModule({});
         }).toThrowError();
