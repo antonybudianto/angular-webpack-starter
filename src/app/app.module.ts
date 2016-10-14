@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { appRoutingProviders, appRoutes } from './app.routes';
+import { AppRoutingModule } from './app-routing.module';
 import { NavbarModule } from './shared';
 import { HomeModule } from './home/home.module';
 
@@ -15,9 +14,8 @@ import { HomeModule } from './home/home.module';
         BrowserModule,
         NavbarModule,
         HomeModule,
-        RouterModule.forRoot(appRoutes)
+        AppRoutingModule
     ],
-    providers: [ appRoutingProviders ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule {
