@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CompletedFilterPipe, TodolistComponent, TodolistRoutes } from './index';
+
+import { CompletedFilterPipe } from './completed-filter.pipe';
+import { TodolistComponent } from './todolist.component';
+import { TodolistRoutes } from './todolist.routes';
 
 @NgModule({
     declarations: [
