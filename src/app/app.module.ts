@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { appRoutingProviders, appRoutes } from './app.routes';
-import { NavbarModule } from './shared';
+import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
     declarations: [
@@ -13,11 +13,11 @@ import { HomeModule } from './home/home.module';
     ],
     imports: [
         BrowserModule,
-        NavbarModule,
+        CoreModule.forRoot(),
+        SharedModule,
         HomeModule,
-        RouterModule.forRoot(appRoutes)
+        AppRoutingModule
     ],
-    providers: [ appRoutingProviders ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule {

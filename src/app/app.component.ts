@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { CONSTANTS } from './shared';
+import { MAIN } from './shared/constant/main';
 
 import '../style.css';
 
@@ -12,6 +12,6 @@ export class AppComponent {
     public appBrand: string;
 
     constructor() {
-        this.appBrand = CONSTANTS.MAIN.APP.BRAND;
+        this.appBrand = MAIN.APP.BRAND;
     }
 }
