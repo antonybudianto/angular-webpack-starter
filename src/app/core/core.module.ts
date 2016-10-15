@@ -1,7 +1,5 @@
-import {
-  ModuleWithProviders, NgModule,
-  Optional, SkipSelf }       from '@angular/core';
-import { CommonModule }      from '@angular/common';
+import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { NavbarModule } from './navbar/navbar.module';
 import { throwIfAlreadyLoaded } from './module-import-guard';
