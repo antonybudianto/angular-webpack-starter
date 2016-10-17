@@ -67,6 +67,7 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.NamedModulesPlugin(),
     new webpack.ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
