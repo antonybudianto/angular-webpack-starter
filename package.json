@@ -115,12 +115,14 @@
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
+    "@angularclass/hmr": "^1.2.1",
+    "@angularclass/hmr-loader": "^3.0.2",
     "@types/protractor": "1.5.20",
     "@types/selenium-webdriver": "2.44.28",
     "compression": "^1.6.2",
     "lite-server": "^2.2.2",
     "protractor": "4.0.9",
-    "ts-node": "^1.4.2",
+    "ts-node": "^1.6.0",
     "webpack-dashboard": "^0.2.0",
     "webpack-dev-server": "^2.1.0-beta.9"
   }
