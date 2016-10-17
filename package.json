@@ -115,6 +115,8 @@
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
+    "@angularclass/hmr": "^1.2.1",
+    "@angularclass/hmr-loader": "^3.0.2",
     "@types/protractor": "1.5.20",
     "@types/selenium-webdriver": "2.44.28",
     "compression": "^1.6.2",

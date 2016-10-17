@@ -17,11 +17,13 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(),
     new ExtractTextPlugin('[name].css')
   ],
 
   devServer: {
+    hot: true,
     contentBase: './src/public',
     historyApiFallback: true,
     stats: 'minimal'

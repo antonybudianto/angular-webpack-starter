@@ -19,7 +19,8 @@
     "config",
     "e2e",
     "src/**/*.spec.ts",
-    "src/app/main-ngc.ts"
+    "src/app/main-ngc.ts",
+    "src/app/main.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,

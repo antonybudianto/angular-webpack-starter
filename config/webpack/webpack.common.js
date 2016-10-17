@@ -36,6 +36,9 @@ module.exports = {
           'angular2-template-loader',
           'angular2-router-loader?loader=system&genDir=src/compiled/src/app&aot=' + isProd
         ]
+        .concat(isProd ? [] : [
+          '@angularclass/hmr-loader'
+        ])
       },
       {
         test: /\.html$/,
