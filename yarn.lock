@@ -132,8 +132,8 @@ agent-base@2:
     semver "~5.0.1"
 
 ajv@^4.7.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.8.0.tgz#011df5c4a08edb29574a477269afb15a6f97abe5"
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.8.1.tgz#708213577289a84a8148e66daa980c32da6a562e"
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
@@ -546,8 +546,8 @@ browser-sync-ui@0.6.1:
     weinre "^2.0.0-pre-I0Z7U9OV"
 
 browser-sync@^2.12.3:
-  version "2.17.3"
-  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.17.3.tgz#d3d369607fdcbf0729a14502d5fed43a2217b074"
+  version "2.17.5"
+  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.17.5.tgz#8e0a9ddfc2e162e7aada085f76181c57b6dbdf7a"
   dependencies:
     browser-sync-client "^2.3.3"
     browser-sync-ui "0.6.1"
@@ -695,8 +695,8 @@ camelcase@^3.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
 
 caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000554:
-  version "1.0.30000559"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000559.tgz#afbd68916dd23bfd549c26520c78631fb5e2e393"
+  version "1.0.30000560"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000560.tgz#7f886302e912d15a6e53b81d6ab13de9dba95ee8"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -2668,6 +2668,12 @@ karma-phantomjs-launcher@~1.0.2:
     lodash "^4.0.1"
     phantomjs-prebuilt "^2.1.7"
 
+karma-remap-coverage@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/karma-remap-coverage/-/karma-remap-coverage-0.1.2.tgz#29135a4d165b8e812d5d3833cf50d662b381c88e"
+  dependencies:
+    remap-istanbul "^0.7.0"
+
 karma-source-map-support@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/karma-source-map-support/-/karma-source-map-support-1.2.0.tgz#1bf81e7bb4b089627ab352ec4179e117c406a540"
@@ -4206,7 +4212,7 @@ relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
 
-remap-istanbul@~0.7.0:
+remap-istanbul@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/remap-istanbul/-/remap-istanbul-0.7.0.tgz#c360dadaea641dba734cb6a58cabe9ebd88a2858"
   dependencies:
@@ -4626,14 +4632,6 @@ source-list-map@^0.1.4, source-list-map@~0.1.0:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-0.1.6.tgz#e1e6f94f0b40c4d28dcf8f5b8766e0e45636877f"
 
-source-map-loader@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/source-map-loader/-/source-map-loader-0.1.5.tgz#0ec6ca58aa0e61463a28673dd4c49e8ba67dc718"
-  dependencies:
-    async "^0.9.0"
-    loader-utils "~0.2.2"
-    source-map "~0.1.33"
-
 source-map-support@^0.3.1:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.3.3.tgz#34900977d5ba3f07c7757ee72e73bb1a9b53754f"
@@ -4646,7 +4644,7 @@ source-map-support@^0.4.0, source-map-support@^0.4.1, source-map-support@~0.4.0:
   dependencies:
     source-map "^0.5.3"
 
-source-map@^0.1.41, source-map@~0.1.33:
+source-map@^0.1.41:
   version "0.1.43"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
   dependencies:

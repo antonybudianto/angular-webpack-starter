@@ -14,7 +14,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      './config/test/karma-test-shim.js': ['webpack']
+      './config/test/karma-test-shim.js': ['coverage', 'webpack', 'sourcemap']
     },
 
     webpack: webpackConfig,
@@ -28,17 +28,17 @@ module.exports = function (config) {
     },
 
     coverageReporter: {
-        dir: 'coverage',
-        reporters: [
-            {
-                type: 'json',
-                subdir: '.',
-                file: 'coverage.json'
-            }
-        ]
+        type: 'in-memory'
     },
 
-    reporters: ['progress', 'coverage'],
+    remapCoverageReporter: {
+      'text-summary': null,
+      'json': './coverage/coverage.json',
+      'html': './coverage/html',
+      'lcovonly': './coverage/lcov.info'
+    },
+
+    reporters: ['progress', 'coverage', 'remap-coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
