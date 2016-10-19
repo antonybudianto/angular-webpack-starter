@@ -9,8 +9,8 @@ import { TodolistComponent } from './todolist.component';
 import { TodolistModule } from './todolist.module';
 
 @Component({
-    selector: 'as-test',
-    template: '<as-todolist></as-todolist>'
+    selector: 'app-test',
+    template: '<app-todolist></app-todolist>'
 })
 class TestComponent {
 }

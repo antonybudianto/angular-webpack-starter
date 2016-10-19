@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Todo } from './todo.model';
 
 @Pipe({
-    name: 'asCompletedFilter'
+    name: 'appCompletedFilter'
 })
 export class CompletedFilterPipe implements PipeTransform {
     transform(todos: Todo[], done: boolean): Todo[] {
