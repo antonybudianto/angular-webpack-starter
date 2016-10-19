@@ -16,7 +16,6 @@
     "start": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
     "pretest": "npm run clean-coverage",
     "test": "karma start",
-    "posttests": "npm run coverage",
     "tslint": "tslint",
     "lint": "npm run tslint \"src/**/*.ts\"",
     "ngc": "ngc -p tsconfig-aot.json",
