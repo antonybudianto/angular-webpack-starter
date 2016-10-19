@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Todo } from './todo.model';
 
 @Component({
-    selector: 'as-todolist',
+    selector: 'app-todolist',
     templateUrl: 'todolist.component.html',
     styleUrls: [
         'todolist.component.css'

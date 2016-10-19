@@ -5,8 +5,8 @@ import { MAIN } from './shared/constant/main';
 import '../style.css';
 
 @Component({
-    selector: 'as-main-app',
-    templateUrl: 'app.html'
+    selector: 'app-main',
+    templateUrl: 'app.component.html'
 })
 export class AppComponent {
     public appBrand: string;
