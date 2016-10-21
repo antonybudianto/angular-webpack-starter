@@ -95,6 +95,8 @@
     "lodash": "^4.16.4",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.13",
+    "postcss-loader": "^1.0.0",
+    "precss": "^1.4.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.4",
     "rxjs": "5.0.0-beta.12",
