@@ -1,13 +1,13 @@
 h4 {
-	color: color(orangered blackness(10%));
-	animation: 5s text-anim;
+    color: color(orangered blackness(10%));
+    animation: 5s text-anim;
 }
 
 @keyframes text-anim {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 100%;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
