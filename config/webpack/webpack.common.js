@@ -54,7 +54,7 @@ module.exports = {
         loader: ExtractTextPlugin
           .extract({
               fallbackLoader: "style-loader",
-              loader: ['css', 'postcss']
+              loader: ['css' + (isProd ? '?minimize' : ''), 'postcss']
           })
       },
       {
