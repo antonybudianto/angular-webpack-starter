@@ -31,14 +31,13 @@ module.exports = {
       },
       {
         test: /\.ts$/,
-        loaders: [
+        loaders: isProd ? [
+          'angular2-router-loader?loader=system&genDir=src/app/compiled/src/app&aot=' + isProd
+        ] : [
           'awesome-typescript-loader',
           'angular2-template-loader',
-          'angular2-router-loader?loader=system&genDir=src/compiled/src/app&aot=' + isProd
-        ]
-        .concat(isProd ? [] : [
           '@angularclass/hmr-loader'
-        ])
+        ]
       },
       {
         test: /\.html$/,
@@ -97,8 +96,8 @@ module.exports = {
       options: {
         postcss: [require('postcss-cssnext')],
         tslint: {
-          emitError: true,
-          failOnHint: true
+          emitError: false,
+          failOnHint: false
         }
       }
     })

@@ -9,7 +9,10 @@
     "removeComments": false,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "outDir": "output",
+    "outDir": "lib",
+    "rootDir": ".",
+    "mapRoot": "",
+    "skipLibCheck": true,
     "typeRoots": [
       "node_modules/@types"
     ]
@@ -28,7 +31,8 @@
     "useCache": true
   },
   "angularCompilerOptions": {
-   "genDir": "src/compiled",
+   "genDir": "./src/app/compiled",
+   "entryModule": "./src/app/app.module#AppModule",
    "skipMetadataEmit" : true
  }
 }

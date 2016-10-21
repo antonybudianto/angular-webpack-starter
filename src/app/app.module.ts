@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
     ],
     imports: [
         BrowserModule,
-        CoreModule.forRoot(),
+        CoreModule,
         SharedModule,
         HomeModule,
         AppRoutingModule

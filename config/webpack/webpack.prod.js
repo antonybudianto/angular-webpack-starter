@@ -1,7 +1,8 @@
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
+const { AotPlugin } = require('@ngtools/webpack');
 
 const commonConfig = require('./webpack.common.js');
 const helpers = require('./helpers');
@@ -10,6 +11,17 @@ const ENV = process.env.APP_ENV || 'production';
 
 module.exports = webpackMerge(commonConfig, {
   devtool: 'source-map',
+
+  module: {
+    rules: [
+      {
+        enforce: 'post',
+        test: /\.ts$/,
+        loaders: ['@ngtools/webpack'],
+        exclude: [/\.(spec|e2e)\.ts$/]
+      }
+    ]
+  },
 
   entry: {
     'app': './src/app/main-ngc.ts'
@@ -22,6 +34,10 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   plugins: [
+    new AotPlugin({
+      tsConfigPath: 'tsconfig-aot.json',
+      typeCheck: false
+    }),
     new webpack.NoErrorsPlugin(),
 
     // TODO: Webpack 2 issue https://github.com/webpack/webpack/issues/2644
@@ -39,6 +55,7 @@ module.exports = webpackMerge(commonConfig, {
     }),
     new webpack.LoaderOptionsPlugin({
       options: {
+        postcss: [require('postcss-cssnext')],
         htmlLoader: {
           minimize: false // workaround for ng2
         }
