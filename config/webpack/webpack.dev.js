@@ -19,7 +19,10 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(),
-    new ExtractTextPlugin('[name].css')
+    new ExtractTextPlugin({
+      filename: '[name].css',
+      allChunks: true
+    })
   ],
 
   devServer: {

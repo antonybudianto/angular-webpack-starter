@@ -31,14 +31,13 @@ module.exports = {
       },
       {
         test: /\.ts$/,
-        loaders: [
+        loaders: isProd ? [
+          'angular2-router-loader?loader=system&genDir=src/app/compiled/src/app&aot=' + isProd
+        ] : [
           'awesome-typescript-loader',
           'angular2-template-loader',
-          'angular2-router-loader?loader=system&genDir=src/compiled/src/app&aot=' + isProd
-        ]
-        .concat(isProd ? [] : [
           '@angularclass/hmr-loader'
-        ])
+        ]
       },
       {
         test: /\.html$/,
@@ -55,13 +54,13 @@ module.exports = {
         loader: ExtractTextPlugin
           .extract({
               fallbackLoader: "style-loader",
-              loader: "css-loader" +(isProd ? '?minimize' : '')
+              loader: ['css', 'postcss']
           })
       },
       {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw'
+        loader: 'raw!postcss'
       }
     ]
   },
@@ -95,9 +94,10 @@ module.exports = {
 
     new webpack.LoaderOptionsPlugin({
       options: {
+        postcss: [require('postcss-cssnext')],
         tslint: {
-          emitError: true,
-          failOnHint: true
+          emitError: false,
+          failOnHint: false
         }
       }
     })
