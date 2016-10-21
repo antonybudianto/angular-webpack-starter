@@ -1,5 +1,9 @@
+:root {
+  --mainColor: gray;
+}
+
 body {
-    background-color: gray;
+    background-color: var(--mainColor);
 }
 
 .center-fix {

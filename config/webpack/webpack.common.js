@@ -54,14 +54,14 @@ module.exports = {
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin
           .extract({
-              // fallbackLoader: "style-loader",
+              fallbackLoader: "style-loader",
               loader: ['css', 'postcss']
           })
       },
       {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw'
+        loader: 'raw!postcss'
       }
     ]
   },
@@ -95,17 +95,12 @@ module.exports = {
 
     new webpack.LoaderOptionsPlugin({
       options: {
-        postcss: [require('precss')],
+        postcss: [require('postcss-cssnext')],
         tslint: {
           emitError: true,
           failOnHint: true
         }
       }
-    }),
-
-    new ExtractTextPlugin({
-      allChunks: true,
-      filename: 'app.css'
     })
   ]
 

@@ -28,7 +28,10 @@ module.exports = webpackMerge(commonConfig, {
     // new webpack.optimize.DedupePlugin(),
 
     new webpack.optimize.UglifyJsPlugin(),
-    new ExtractTextPlugin('[name].[hash].css'),
+    new ExtractTextPlugin({
+      filename: '[name].[hash].css',
+      allChunks: true
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'APP_ENV': JSON.stringify(ENV)
@@ -36,6 +39,7 @@ module.exports = webpackMerge(commonConfig, {
     }),
     new webpack.LoaderOptionsPlugin({
       options: {
+        postcss: [require('postcss-cssnext')],
         htmlLoader: {
           minimize: false // workaround for ng2
         }
