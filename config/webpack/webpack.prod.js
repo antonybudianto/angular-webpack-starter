@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const { AotPlugin } = require('@ngtools/webpack');
+const ngtools = require('@ngtools/webpack');
 
 const commonConfig = require('./webpack.common.js');
 const helpers = require('./helpers');
@@ -34,7 +34,7 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   plugins: [
-    new AotPlugin({
+    new ngtools.AotPlugin({
       tsConfigPath: 'tsconfig-aot.json',
       typeCheck: false
     }),
