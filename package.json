@@ -22,7 +22,7 @@
     "prebuild": "npm run clean-build",
     "build": "webpack --config config/webpack/webpack.prod.js --progress --profile --bail",
     "serve-build": "npm run build && npm run serve",
-    "clean": "npm run clean-build && npm run clean-ngc && npm run clean-coverage",
+    "clean": "npm run clean-build && npm run clean-coverage",
     "clean-build": "rimraf dist",
     "clean-coverage": "rimraf coverage",
     "pree2e": "npm run webdriver:update -- --standalone",
