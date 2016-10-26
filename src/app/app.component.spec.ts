@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 
 @Component({
-    selector: 'as-test-cmp',
+    selector: 'app-test-cmp',
     template: '<div class="title">Hello test</div>'
 })
 class TestRouterComponent {
