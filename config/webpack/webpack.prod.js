@@ -24,7 +24,7 @@ module.exports = webpackMerge(commonConfig, {
   },
 
   entry: {
-    'app': './src/app/main-ngc.ts'
+    'app': './src/main-ngc.ts'
   },
 
   output: {
