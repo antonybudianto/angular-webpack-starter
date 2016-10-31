@@ -11,7 +11,7 @@ node_js:
 script:
   - cp .env.travis .env
   - npm run stat
-  - npm test
+  - npm test -- --ci
   - npm run build
 after_script:
   - npm install coveralls

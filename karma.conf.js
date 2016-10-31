@@ -1,6 +1,7 @@
 var webpackConfig = require('./config/webpack/webpack.test');
 
 module.exports = function (config) {
+
   var _config = {
     basePath: '',
 
@@ -42,9 +43,9 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: false,
+    autoWatch: !config.ci,
     browsers: ['PhantomJS'],
-    singleRun: true
+    singleRun: config.ci
   };
 
   config.set(_config);

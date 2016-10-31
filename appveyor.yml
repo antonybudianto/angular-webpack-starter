@@ -29,8 +29,8 @@ test_script:
   - node -e 'console.log(process.env);'
   # We test multiple Windows shells because of prior stdout buffering issues
   # filed against Grunt. https://github.com/joyent/node/issues/3584
-  - ps: "npm test # PowerShell" # Pass comment to PS for easier debugging
-  - cmd: npm test
+  - ps: "npm test -- --ci # PowerShell" # Pass comment to PS for easier debugging
+  - cmd: npm test -- --ci
 
 cache:
   - node_modules -> package.json                                        # local npm modules
