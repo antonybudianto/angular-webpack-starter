@@ -13,9 +13,9 @@ const envMap = _.mapValues(env, v => JSON.stringify(v));
 
 module.exports = {
   entry: {
-    'polyfills': './src/app/polyfills.ts',
-    'vendor': './src/app/vendor.ts',
-    'app': './src/app/main.ts'
+    'polyfills': './src/polyfills.ts',
+    'vendor': './src/vendor.ts',
+    'app': './src/main.ts'
   },
 
   resolve: {

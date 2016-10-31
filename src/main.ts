@@ -2,9 +2,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { removeNgStyles, createNewHosts, createInputTransfer, bootloader } from '@angularclass/hmr';
 
-import { AppComponent } from './app.component';
-import { AppStore } from './app-store';
-import { AppModule } from './app.module';
+import { AppComponent } from './app/app.component';
+import { AppStore } from './app/app-store';
+import { AppModule } from './app/app.module';
 
 @NgModule({
     bootstrap: [
