@@ -13,7 +13,7 @@
     "npm": "~3.0.0"
   },
   "scripts": {
-    "prestart": "npm run build:dll",
+    "postinstall": "npm run build:dll",
     "start": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
     "pretest": "npm run clean-coverage",
     "test": "karma start",
