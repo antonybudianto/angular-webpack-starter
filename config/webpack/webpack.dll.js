@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 
-const isProd = process.env.npm_lifecycle_event === 'build';
 const helpers = require('./helpers');
 const constants = require('./constants');
 
@@ -8,23 +7,6 @@ module.exports = {
   entry: {
     'polyfills': [ './src/polyfills.ts' ],
     'vendor': [ './src/vendor.ts' ]
-  },
-
-  module: {
-    rules: [
-      {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file?name=assets/[name].[hash].[ext]'
-      },
-      {
-        test: /\.css$/,
-        loaders: [
-          'style',
-          'css' + (isProd ? '?minimize' : ''),
-          'postcss'
-        ]
-      }
-    ]
   },
 
   output: {

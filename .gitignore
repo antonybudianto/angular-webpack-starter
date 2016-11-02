@@ -1,5 +1,6 @@
 .env
 .idea/
+.vscode/
 /coverage
 /node_modules
 /bower_components
