@@ -11,12 +11,18 @@ const constants = require('./constants');
 const isProd = process.env.npm_lifecycle_event === 'build';
 const envMap = _.mapValues(env, v => JSON.stringify(v));
 
+const entry = {
+  'polyfills': './src/polyfills.ts',
+  'vendor-style': './src/vendor-style.ts',
+  'app': './src/main.ts'
+};
+
+if (isProd) {
+  entry.vendor = './src/vendor.ts'
+}
+
 module.exports = {
-  entry: {
-    'polyfills': './src/polyfills.ts',
-    'vendor': './src/vendor.ts',
-    'app': './src/main.ts'
-  },
+  entry: entry,
 
   resolve: {
     extensions: ['.js', '.ts']
@@ -84,7 +90,7 @@ module.exports = {
     ),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'polyfills']
+      name: ['app', 'vendor', 'vendor-style', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({

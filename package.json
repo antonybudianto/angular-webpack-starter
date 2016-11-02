@@ -13,6 +13,7 @@
     "npm": "~3.0.0"
   },
   "scripts": {
+    "prestart": "npm run build:dll",
     "start": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
     "pretest": "npm run clean-coverage",
     "test": "karma start",
@@ -22,6 +23,7 @@
     "prebuild": "npm run clean-build",
     "build": "webpack --config config/webpack/webpack.prod.js --progress --profile --bail",
     "serve-build": "npm run build && npm run serve",
+    "build:dll": "webpack --config config/webpack/webpack.dll.js --progress --profile --bail",
     "clean": "npm run clean-build && npm run clean-coverage",
     "clean-build": "rimraf dist",
     "clean-coverage": "rimraf coverage",
@@ -111,6 +113,7 @@
     "@angularclass/hmr-loader": "^3.0.2",
     "@types/protractor": "1.5.20",
     "@types/selenium-webdriver": "2.44.28",
+    "add-asset-html-webpack-plugin": "^1.0.2",
     "compression": "^1.6.2",
     "lite-server": "^2.2.2",
     "protractor": "4.0.10",
