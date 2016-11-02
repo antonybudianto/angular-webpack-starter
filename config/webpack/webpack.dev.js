@@ -5,7 +5,18 @@ const DashboardPlugin = require('webpack-dashboard/plugin');
 const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 
 const commonConfig = require('./webpack.common.js');
+const constants = require('./constants');
 const helpers = require('./helpers');
+
+let polyfillsManifest;
+let vendorManifest;
+
+try {
+  polyfillsManifest = require(helpers.root(constants.DLL_DIST, 'polyfills-manifest.json'));
+  vendorManifest = require(helpers.root(constants.DLL_DIST, 'vendor-manifest.json'));
+} catch (e) {
+  throw 'Please rebuild DLL first by running `npm run build:dll`';
+}
 
 module.exports = webpackMerge(commonConfig, {
   devtool: 'source-map',
@@ -20,15 +31,15 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
     new webpack.DllReferencePlugin({
       context: '.',
-      manifest: require(helpers.root('dist', 'polyfills-manifest.json'))
+      manifest: polyfillsManifest
     }),
     new webpack.DllReferencePlugin({
       context: '.',
-      manifest: require(helpers.root('dist', 'vendor-manifest.json'))
+      manifest: vendorManifest
     }),
     new AddAssetHtmlPlugin([
-      { filepath: 'dist/polyfills.dll.js', includeSourcemap: false },
-      { filepath: 'dist/vendor.dll.js', includeSourcemap: false }
+      { filepath: constants.DLL_DIST + '/polyfills.dll.js', includeSourcemap: false },
+      { filepath: constants.DLL_DIST + '/vendor.dll.js', includeSourcemap: false }
     ]),
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(),

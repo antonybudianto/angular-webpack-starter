@@ -5,6 +5,7 @@
 /node_modules
 /bower_components
 /dist
+/dll-dist
 /output
 /src/compiled
 /typings

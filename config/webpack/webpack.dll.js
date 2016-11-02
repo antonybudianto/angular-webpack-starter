@@ -11,7 +11,7 @@ module.exports = {
 
   output: {
     filename: '[name].dll.js',
-    path: 'dist/',
+    path: constants.DLL_DIST + '/',
 
     // The name of the global variable which the library's
     // require() function will be assigned to
@@ -23,7 +23,7 @@ module.exports = {
       // The path to the manifest file which maps between
       // modules included in a bundle and the internal IDs
       // within that bundle
-      path: 'dist/[name]-manifest.json',
+      path: constants.DLL_DIST + '/[name]-manifest.json',
       // The name of the global variable which the library's
       // require function has been assigned to. This must match the
       // output.library option above
