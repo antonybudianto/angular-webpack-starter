@@ -63,6 +63,9 @@ and done! Open a browser and go to http://localhost:8080 and you can start devel
 Every changes to the file will refresh the browser automatically
 and it'll also compile your changed TypeScripts files to Javascript files.
 
+> If any error occured when starting, please try `npm run start:dll`.
+That means `post-install` script for building DLL files is blocked/not run somehow.
+
 ## Testing
 This starter comes with testing workflow
 
