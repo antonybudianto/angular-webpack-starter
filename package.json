@@ -13,7 +13,6 @@
     "npm": "~3.0.0"
   },
   "scripts": {
-    "postinstall": "npm run build:dll",
     "start": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
     "start:dll": "npm run build:dll && npm run start",
     "pretest": "npm run clean:coverage",
