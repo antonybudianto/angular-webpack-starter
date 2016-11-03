@@ -6,6 +6,11 @@ import '@angular/forms';
 import '@angular/router';
 
 // RxJS
-// Uncomment below if you use RxJS in many feature modules
+// Uncomment below if you use RxJS in many non-preload lazy-loaded modules
 // import 'rxjs';
 
+// Development only packages, for faster build with DLL
+if (process.env.APP_ENV === 'development') {
+    require('@angular/platform-browser-dynamic');
+    require('@angularclass/hmr');
+}
