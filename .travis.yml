@@ -8,6 +8,8 @@ node_js:
   - "6.0"
   - "5.6"
   - "4.3"
+install:
+  - npm install --no-optional
 script:
   - cp .env.travis .env
   - npm run stat
