@@ -46,7 +46,7 @@ You need to have [Node.js and npm](https://nodejs.org/en/)
 ## Installation
 Download the starter from [releases page](https://github.com/antonybudianto/angular-webpack-starter/releases)
 
-Go to the starter directory and install the packages:
+Go to the starter directory and install the packages ([Yarn](https://github.com/yarnpkg/yarn) is recommended):
 ```bash
 npm install
 ```
@@ -54,14 +54,21 @@ npm install
 Then copy `.env.example` and rename it as `.env`. For more [details](https://github.com/antonybudianto/angular-webpack-starter/wiki/Environment-Variables)
 
 ## Start
-Let's start up the server, run:
+Let's start up, run following:
 ```bash
+// Build DLL first, run this once after adding new package
+npm run build:dll
+
+// Start the app
 npm start
 ```
 
 and done! Open a browser and go to http://localhost:8080 and you can start developing Angular!
 Every changes to the file will refresh the browser automatically
 and it'll also compile your changed TypeScripts files to Javascript files.
+
+> If any error occured when starting, please retry `npm run build:dll`.
+That means DLL build is too old and need to be refreshed.
 
 ## Testing
 This starter comes with testing workflow
