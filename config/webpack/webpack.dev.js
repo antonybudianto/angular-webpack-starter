@@ -28,6 +28,25 @@ module.exports = webpackMerge(commonConfig, {
     chunkFilename: '[id].chunk.js'
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        loaders: 'awesome-typescript-loader',
+        query: {
+          forkChecker: true
+        }
+      },
+      {
+        test: /\.ts$/,
+        loaders: [
+          'angular2-template-loader',
+          '@angularclass/hmr-loader'
+        ]
+      }
+    ]
+  },
+
   plugins: [
     new webpack.DllReferencePlugin({
       context: '.',

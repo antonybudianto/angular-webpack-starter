@@ -39,11 +39,7 @@ module.exports = {
         test: /\.ts$/,
         loaders: [
           'angular2-router-loader?loader=system&genDir=src/app/compiled/src/app&aot=' + isProd
-        ].concat(isProd ? [] : [
-          'awesome-typescript-loader',
-          'angular2-template-loader',
-          '@angularclass/hmr-loader'
-        ])
+        ]
       },
       {
         test: /\.html$/,
