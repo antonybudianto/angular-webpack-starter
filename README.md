@@ -25,7 +25,6 @@ This starter contains almost everything you need to start developing [Angular](h
 - You can tune it as you wish, no blackbox
 
 ### What's included?
-* [npm](https://www.npmjs.com/) for package manager
 * [TypeScript](http://www.typescriptlang.org/) for the base language
   * with [Typings](https://github.com/typings/typings) for TypeScript definition manager
 * [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) for development server & reload capability
@@ -42,6 +41,7 @@ Please visit the [wiki](https://github.com/antonybudianto/angular-webpack-starte
 You need to have [Node.js and npm](https://nodejs.org/en/)
 - Support Node v4 - latest
 - Support npm v3 - latest
+- Support [Yarn](https://yarnpkg.com/)
 
 ## Installation
 Download the starter from [releases page](https://github.com/antonybudianto/angular-webpack-starter/releases)
