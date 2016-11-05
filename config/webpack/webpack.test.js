@@ -30,7 +30,8 @@ module.exports = {
         query: {
           module: 'commonjs',
           sourceMap: false,
-          inlineSourceMap: true
+          inlineSourceMap: true,
+          forkChecker: true
         }
       },
       {
