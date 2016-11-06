@@ -7,7 +7,7 @@
 [![devDependency Status](https://david-dm.org/antonybudianto/angular-webpack-starter/dev-status.svg)](https://david-dm.org/antonybudianto/angular-webpack-starter#info=devDependencies)
 [![Dependency Status](https://dependencyci.com/github/antonybudianto/angular-webpack-starter/badge)](https://dependencyci.com/github/antonybudianto/angular-webpack-starter)
 
-> Live Production Build [Demo](https://antonybudianto.github.io/angular-webpack-starter/)
+> Live Production Build [Demo](http://angular-webpack-starter.surge.sh/)
 
 ## Introduction
 Welcome to Angular Webpack Starter!
