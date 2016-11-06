@@ -13,7 +13,7 @@ const envMap = _.mapValues(env, v => JSON.stringify(v));
 
 const entry = {
   'polyfills': './src/polyfills.ts',
-  'vendor-style': './src/vendor-style.ts',
+  'style': './src/style.ts',
   'app': './src/main.ts'
 };
 
@@ -86,7 +86,7 @@ module.exports = {
     ),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'vendor-style', 'polyfills']
+      name: ['app', 'vendor', 'style', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({
