@@ -1,1 +1,3 @@
-declare var System: any;
+/**
+ * Declare custom typings here
+ */
