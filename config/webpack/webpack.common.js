@@ -33,12 +33,18 @@ module.exports = {
       {
         enforce: 'pre',
         test: /^((?!(ngfactory|shim)).)*ts$/,
-        loader: 'tslint'
+        loader: 'tslint',
+        exclude: [
+          /node_modules/
+        ]
       },
       {
         test: /\.ts$/,
         loaders: [
           'angular2-router-loader?loader=system&genDir=src/app/compiled/src/app&aot=' + isProd
+        ],
+        exclude: [
+          /node_modules/
         ]
       },
       {
