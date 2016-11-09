@@ -20,7 +20,7 @@ script:
   - npm test -- --ci
   - npm run build
 after_script:
-  - npm install coveralls
+  - yarn add coveralls
   - npm run coveralls
 cache:
   directories:

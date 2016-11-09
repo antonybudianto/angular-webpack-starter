@@ -35,13 +35,19 @@ module.exports = webpackMerge(commonConfig, {
         loaders: 'awesome-typescript-loader',
         query: {
           forkChecker: true
-        }
+        },
+        exclude: [
+          /node_modules/
+        ]
       },
       {
         test: /\.ts$/,
         loaders: [
           'angular2-template-loader',
           '@angularclass/hmr-loader'
+        ],
+        exclude: [
+          /node_modules/
         ]
       }
     ]
