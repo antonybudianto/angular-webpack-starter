@@ -15,7 +15,7 @@ node_js:
 install:
   - yarn
 script:
-  - cp .env.travis .env
+  - cp config/internal/.env.travis .env
   - npm run stat
   - npm test -- --ci
   - npm run build

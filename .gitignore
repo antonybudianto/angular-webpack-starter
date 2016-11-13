@@ -1,4 +1,5 @@
 .env
+npm-debug.log
 .idea/
 .vscode/
 /coverage
@@ -6,15 +7,5 @@
 /bower_components
 /dist
 /dll-dist
-/output
-/src/compiled
 /typings
 .DS_Store
-/src/assets/styles/*.css
-/src/**/*.ngfactory.js
-/src/**/*.ngfactory.ts
-/src/**/*.ngfactory.js.map
-/src/**/*.metadata.json
-/src/**/*.js.map
-/src/**/*.js
-/src/**/*.shim.ts
