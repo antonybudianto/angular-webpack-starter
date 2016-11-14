@@ -33,7 +33,7 @@ module.exports = {
       {
         enforce: 'pre',
         test: /^((?!(ngfactory|shim)).)*ts$/,
-        loader: 'tslint',
+        loader: 'tslint-loader',
         exclude: [
           /node_modules/
         ]
@@ -49,12 +49,12 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: 'html',
+        loader: 'html-loader',
         exclude: helpers.root('src', 'public')
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file?name=assets/[name].[hash].[ext]'
+        loader: 'file-loader?name=assets/[name].[hash].[ext]'
       },
       {
         test: /\.css$/,
@@ -62,13 +62,13 @@ module.exports = {
         loader: ExtractTextPlugin
           .extract({
               fallbackLoader: "style-loader",
-              loader: ['css' + (isProd ? '?minimize' : ''), 'postcss']
+              loader: ['css-loader' + (isProd ? '?minimize' : ''), 'postcss-loader']
           })
       },
       {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
-        loader: 'raw!postcss'
+        loader: 'raw-loader!postcss-loader'
       }
     ]
   },
