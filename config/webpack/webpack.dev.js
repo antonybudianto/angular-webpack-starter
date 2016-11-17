@@ -10,6 +10,7 @@ const helpers = require('./helpers');
 
 let polyfillsManifest;
 let vendorManifest;
+const isProd = process.env.npm_lifecycle_event === 'build';
 
 try {
   polyfillsManifest = require(helpers.root(constants.DLL_DIST, 'polyfills-manifest.json'));
@@ -45,6 +46,15 @@ module.exports = webpackMerge(commonConfig, {
         loaders: [
           'angular2-template-loader',
           '@angularclass/hmr-loader'
+        ],
+        exclude: [
+          /node_modules/
+        ]
+      },
+      {
+        test: /\.ts$/,
+        loaders: [
+          'angular2-router-loader?loader=system&genDir=src&aot=' + isProd
         ],
         exclude: [
           /node_modules/
