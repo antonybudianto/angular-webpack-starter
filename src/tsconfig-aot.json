@@ -12,18 +12,16 @@
     "outDir": "lib",
     "rootDir": ".",
     "mapRoot": "",
+    "baseUrl": "",
     "skipLibCheck": true,
     "typeRoots": [
-      "node_modules/@types"
+      "../node_modules/@types"
     ]
   },
   "exclude": [
-    "node_modules",
-    "config",
-    "e2e",
-    "src/**/*.spec.ts",
-    "src/main-ngc.ts",
-    "src/main.ts"
+    "**/*.spec.ts",
+    "main-ngc.ts",
+    "main.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,
@@ -31,7 +29,6 @@
     "useCache": true
   },
   "angularCompilerOptions": {
-   "genDir": "./src/app/compiled",
    "entryModule": "./src/app/app.module#AppModule",
    "skipMetadataEmit" : true
  }

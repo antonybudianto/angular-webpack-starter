@@ -25,7 +25,8 @@ module.exports = {
   entry: entry,
 
   resolve: {
-    extensions: ['.js', '.ts']
+    extensions: ['.js', '.ts'],
+    modules: ['node_modules', helpers.root('src')]
   },
 
   module: {
@@ -34,15 +35,6 @@ module.exports = {
         enforce: 'pre',
         test: /^((?!(ngfactory|shim)).)*ts$/,
         loader: 'tslint-loader',
-        exclude: [
-          /node_modules/
-        ]
-      },
-      {
-        test: /\.ts$/,
-        loaders: [
-          'angular2-router-loader?loader=system&genDir=src/app/compiled/src/app&aot=' + isProd
-        ],
         exclude: [
           /node_modules/
         ]

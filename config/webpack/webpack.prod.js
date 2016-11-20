@@ -35,7 +35,7 @@ module.exports = webpackMerge(commonConfig, {
 
   plugins: [
     new ngtools.AotPlugin({
-      tsConfigPath: 'tsconfig-aot.json',
+      tsConfigPath: 'src/tsconfig-aot.json',
       typeCheck: false
     }),
     new webpack.NoErrorsPlugin(),

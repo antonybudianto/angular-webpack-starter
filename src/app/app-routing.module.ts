@@ -4,7 +4,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 const appRoutes: Routes = [
     {
         path: 'todolist',
-        loadChildren: './todolist/todolist.module#TodolistModule'
+        loadChildren: 'app/todolist/todolist.module#TodolistModule'
     }
 ];
 
