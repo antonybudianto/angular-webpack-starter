@@ -22,6 +22,7 @@
     "serve": "lite-server -c config/browser-sync/bs-config.js",
     "prebuild": "npm run clean:build",
     "build": "webpack --config config/webpack/webpack.prod.js --progress --profile --bail",
+    "postbuild": "npm run sw",
     "serve:build": "run-s build serve",
     "build:dll": "webpack --config config/webpack/webpack.dll.js --progress --profile --bail",
     "clean": "run-p clean:*",
@@ -34,7 +35,8 @@
     "webdriver:start": "npm run webdriver-manager start",
     "webdriver:update": "npm run webdriver-manager update",
     "coveralls": "coveralls < ./coverage/lcov.info",
-    "stat": "node ./config/dashboard"
+    "stat": "node ./config/dashboard",
+    "sw": "sw-precache --root=dist --config=sw-precache-config.js"
   },
   "keywords": [
     "angular",
@@ -102,6 +104,7 @@
     "rimraf": "^2.5.4",
     "rxjs": "5.0.0-beta.12",
     "style-loader": "^0.13.1",
+    "sw-precache": "^4.2.2",
     "tslint": "^3.15.1",
     "tslint-loader": "^2.1.5",
     "typescript": "2.0.10",
