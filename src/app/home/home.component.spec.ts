@@ -21,6 +21,5 @@ describe('HomeComponent', () => {
 
   it('should created successfully', () => {
     expect(component).toBeTruthy();
-    expect(component.logoSource).toBeDefined();
   });
 });
