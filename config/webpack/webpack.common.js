@@ -11,6 +11,11 @@ const constants = require('./constants');
 const isProd = process.env.npm_lifecycle_event === 'build';
 const envMap = _.mapValues(env, v => JSON.stringify(v));
 
+if (!envMap.APP_ENV) {
+  envMap.APP_ENV = 'development';
+  console.log('APP_ENV is not set in your .env, it will default to "development"');
+}
+
 const entry = {
   'polyfills': './src/polyfills.ts',
   'style': './src/style.ts',
