@@ -7,8 +7,6 @@ const ngtools = require('@ngtools/webpack');
 const commonConfig = require('./webpack.common.js');
 const helpers = require('./helpers');
 
-const ENV = process.env.APP_ENV || 'production';
-
 module.exports = webpackMerge(commonConfig, {
   devtool: 'source-map',
 
@@ -43,11 +41,6 @@ module.exports = webpackMerge(commonConfig, {
     new ExtractTextPlugin({
       filename: '[name].[hash].css',
       allChunks: true
-    }),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'APP_ENV': JSON.stringify(ENV)
-      }
     }),
     new webpack.LoaderOptionsPlugin({
       options: {

@@ -11,15 +11,17 @@ const constants = require('./constants');
 const isProd = process.env.npm_lifecycle_event === 'build';
 const envMap = _.mapValues(env, v => JSON.stringify(v));
 
+if (!envMap.APP_ENV) {
+  envMap.APP_ENV = 'development';
+  console.log('APP_ENV is not set in your .env, it will default to "development"');
+}
+
 const entry = {
   'polyfills': './src/polyfills.ts',
   'style': './src/style.ts',
+  'vendor': './src/vendor.ts',
   'app': './src/main.ts'
 };
-
-if (isProd) {
-  entry.vendor = './src/vendor.ts'
-}
 
 module.exports = {
   entry: entry,
@@ -84,7 +86,7 @@ module.exports = {
     ),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'style', 'polyfills']
+      name: ['app', 'vendor', 'vendorDll', 'style', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({
