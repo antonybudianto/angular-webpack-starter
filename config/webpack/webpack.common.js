@@ -19,12 +19,9 @@ if (!envMap.APP_ENV) {
 const entry = {
   'polyfills': './src/polyfills.ts',
   'style': './src/style.ts',
+  'vendor': './src/vendor.ts',
   'app': './src/main.ts'
 };
-
-if (isProd) {
-  entry.vendor = './src/vendor.ts'
-}
 
 module.exports = {
   entry: entry,
@@ -89,7 +86,7 @@ module.exports = {
     ),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'style', 'polyfills']
+      name: ['app', 'vendor', 'vendorDll', 'style', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({

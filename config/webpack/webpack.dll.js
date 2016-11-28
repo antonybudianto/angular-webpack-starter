@@ -6,7 +6,7 @@ const constants = require('./constants');
 module.exports = {
   entry: {
     'polyfills': [ './src/polyfills.ts' ],
-    'vendor': [ './src/vendor.ts' ]
+    'vendorDll': [ './src/vendor.dll.ts' ]
   },
 
   output: {

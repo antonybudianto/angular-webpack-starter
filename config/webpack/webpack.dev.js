@@ -14,7 +14,7 @@ const isProd = process.env.npm_lifecycle_event === 'build';
 
 try {
   polyfillsManifest = require(helpers.root(constants.DLL_DIST, 'polyfills-manifest.json'));
-  vendorManifest = require(helpers.root(constants.DLL_DIST, 'vendor-manifest.json'));
+  vendorManifest = require(helpers.root(constants.DLL_DIST, 'vendorDll-manifest.json'));
 } catch (e) {
   throw 'Please rebuild DLL first by running `npm run build:dll`';
 }
@@ -74,7 +74,7 @@ module.exports = webpackMerge(commonConfig, {
     }),
     new AddAssetHtmlPlugin([
       { filepath: constants.DLL_DIST + '/polyfills.dll.js', includeSourcemap: false },
-      { filepath: constants.DLL_DIST + '/vendor.dll.js', includeSourcemap: false }
+      { filepath: constants.DLL_DIST + '/vendorDll.dll.js', includeSourcemap: false }
     ]),
     new webpack.HotModuleReplacementPlugin(),
     new DashboardPlugin(),
