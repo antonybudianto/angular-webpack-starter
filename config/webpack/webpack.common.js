@@ -58,7 +58,7 @@ module.exports = webpackMerge(coreConfig, {
     new webpack.NamedModulesPlugin(),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app', 'vendor', 'vendorDll', 'style', 'polyfills']
+      name: ['vendorDll', 'vendor', 'app', 'style', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({
