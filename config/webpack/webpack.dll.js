@@ -1,9 +1,11 @@
 const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
 
+const coreconfig = require('./webpack.core');
 const helpers = require('./helpers');
 const constants = require('./constants');
 
-module.exports = {
+module.exports = webpackMerge(coreconfig, {
   entry: {
     'polyfills': [ './src/polyfills.ts' ],
     'vendorDll': [ './src/vendor.dll.ts' ]
@@ -42,4 +44,4 @@ module.exports = {
       helpers.root('./src') // location of your src
     )
   ],
-};
+});
