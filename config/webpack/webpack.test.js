@@ -1,8 +1,11 @@
+const env = require('dotenv').config({ silent: true });
 const webpack = require('webpack');
 const path = require('path');
+const _ = require('lodash');
 
 const helpers = require('./helpers');
 const constants = require('./constants');
+const envMap = _.mapValues(env, v => JSON.stringify(v));
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -61,6 +64,9 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': envMap
+    }),
     new webpack.ContextReplacementPlugin(
       // The (\\|\/) piece accounts for path separators in *nix and Windows
       constants.CONTEXT_REPLACE_REGEX,
