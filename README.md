@@ -101,7 +101,7 @@ npm run build
 ```
 or you can create production build and then serve it using Lite Server by running:
 ```bash
-npm run serve-build
+npm run serve:build
 ```
 
 ## Extension
