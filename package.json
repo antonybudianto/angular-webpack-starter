@@ -106,7 +106,7 @@
     "tslint-loader": "^3.2.0",
     "typescript": "2.0.10",
     "webpack": "2.1.0-beta.27",
-    "webpack-merge": "^0.18.0",
+    "webpack-merge": "^1.0.1",
     "zone.js": "^0.6.21"
   },
   "devDependencies": {

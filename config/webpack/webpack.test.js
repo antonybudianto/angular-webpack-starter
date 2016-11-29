@@ -1,16 +1,13 @@
 const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
 const path = require('path');
+const _ = require('lodash');
 
+const coreConfig = require('./webpack.core');
 const helpers = require('./helpers');
-const constants = require('./constants');
 
-module.exports = {
+module.exports = webpackMerge(coreConfig, {
   devtool: 'inline-source-map',
-
-  resolve: {
-    extensions: ['.ts', '.js'],
-    modules: ['node_modules', helpers.root('src')]
-  },
 
   module: {
     rules: [
@@ -58,13 +55,5 @@ module.exports = {
         loader: 'raw-loader'
       }
     ]
-  },
-
-  plugins: [
-    new webpack.ContextReplacementPlugin(
-      // The (\\|\/) piece accounts for path separators in *nix and Windows
-      constants.CONTEXT_REPLACE_REGEX,
-      helpers.root('./src') // location of your src
-    )
-  ]
-}
+  }
+});
