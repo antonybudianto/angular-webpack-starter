@@ -3,6 +3,11 @@ h4 {
     animation: 5s text-anim;
 }
 
+.panel {
+    background: url(images/sayagata.png) no-repeat center center;
+    background-size: cover;
+}
+
 @keyframes text-anim {
     0% {
         opacity: 0;
