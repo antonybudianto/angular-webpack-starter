@@ -7,7 +7,7 @@ const helpers = require('./helpers');
 const envMap = _.mapValues(env, v => JSON.stringify(v));
 
 if (!envMap.APP_ENV) {
-  envMap.APP_ENV = 'development';
+  envMap.APP_ENV = '"development"';
   console.log('APP_ENV is not set in your .env, it will default to "development"');
 } else {
   console.log('APP_ENV is ' + envMap.APP_ENV);
