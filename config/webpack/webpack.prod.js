@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ngtools = require('@ngtools/webpack');
@@ -56,6 +57,12 @@ module.exports = webpackMerge(commonConfig, {
         test: /\.js$/,
         threshold: 10240,
         minRatio: 0.8
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/public/images',
+        to: './images'
+      }
+    ])
   ]
 });
