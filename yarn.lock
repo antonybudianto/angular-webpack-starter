@@ -73,9 +73,9 @@
   dependencies:
     "@angular-cli/ast-tools" "^1.0.0"
 
-"@types/core-js@0.9.34":
-  version "0.9.34"
-  resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.34.tgz#72c521d8e59fdaa8b65f76db71fa53c82c7c21c5"
+"@types/core-js@0.9.35":
+  version "0.9.35"
+  resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.35.tgz#444064e63711cdcc62ea844d27642f6efc2285f2"
 
 "@types/jasmine@2.5.38", "@types/jasmine@^2.5.36":
   version "2.5.38"
@@ -396,7 +396,7 @@ autoprefixer@^6.0.2, autoprefixer@^6.3.1:
     postcss "^5.2.5"
     postcss-value-parser "^3.2.3"
 
-awesome-typescript-loader@^2.2.4:
+awesome-typescript-loader@2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/awesome-typescript-loader/-/awesome-typescript-loader-2.2.4.tgz#4185d60c035c25515f9c2a747fa5f69b2a001e9e"
   dependencies:
@@ -2825,6 +2825,10 @@ isexe@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-1.1.2.tgz#36f3e22e60750920f5e7241a476a8c6a42275ad0"
 
+isnumeric@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/isnumeric/-/isnumeric-0.2.0.tgz#a2347ba360de19e33d0ffd590fddf7755cbf2e64"
+
 isobject@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"
@@ -3166,6 +3170,10 @@ lodash._root@^3.0.0:
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
 
 lodash.differencewith@^4.5.0:
   version "4.5.0"
@@ -3629,9 +3637,9 @@ normalize-url@^1.4.0:
     query-string "^4.1.0"
     sort-keys "^1.0.0"
 
-npm-run-all@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-3.1.1.tgz#5c6fe867332f08342b1a1ea99f447ab86c95cb02"
+npm-run-all@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-3.1.2.tgz#c7e3faf4aa0a59bf0dcfc12601166151692171cf"
   dependencies:
     chalk "^1.1.3"
     cross-spawn "^4.0.0"
@@ -4061,6 +4069,14 @@ postcss-color-hex-alpha@^2.0.0:
     postcss "^5.0.4"
     postcss-message-helpers "^2.0.0"
 
+postcss-color-hsl@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/postcss-color-hsl/-/postcss-color-hsl-1.0.5.tgz#f53bb1c348310ce307ad89e3181a864738b5e687"
+  dependencies:
+    postcss "^5.2.0"
+    postcss-value-parser "^3.3.0"
+    units-css "^0.4.0"
+
 postcss-color-hwb@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/postcss-color-hwb/-/postcss-color-hwb-2.0.0.tgz#2c0d30a9563158f41eb3f6bddfdf1dae9cadae37"
@@ -4076,6 +4092,13 @@ postcss-color-rebeccapurple@^2.0.0:
   dependencies:
     color "^0.9.0"
     postcss "^5.0.4"
+
+postcss-color-rgb@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/postcss-color-rgb/-/postcss-color-rgb-1.1.4.tgz#f29243e22e8e8c13434474092372d4ce605be8bc"
+  dependencies:
+    postcss "^5.2.0"
+    postcss-value-parser "^3.3.0"
 
 postcss-color-rgba-fallback@^2.0.0:
   version "2.2.0"
@@ -4100,9 +4123,9 @@ postcss-convert-values@^2.3.4:
     postcss "^5.0.11"
     postcss-value-parser "^3.1.2"
 
-postcss-cssnext@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/postcss-cssnext/-/postcss-cssnext-2.8.0.tgz#fbaef792185967457812f66355d0c24707bb8cf3"
+postcss-cssnext@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/postcss-cssnext/-/postcss-cssnext-2.9.0.tgz#064df2a8c21fd2ebb88825df372cf20fca882868"
   dependencies:
     autoprefixer "^6.0.2"
     caniuse-api "^1.3.2"
@@ -4116,8 +4139,10 @@ postcss-cssnext@^2.8.0:
     postcss-color-function "^2.0.0"
     postcss-color-gray "^3.0.0"
     postcss-color-hex-alpha "^2.0.0"
+    postcss-color-hsl "^1.0.5"
     postcss-color-hwb "^2.0.0"
     postcss-color-rebeccapurple "^2.0.0"
+    postcss-color-rgb "^1.1.4"
     postcss-color-rgba-fallback "^2.0.0"
     postcss-custom-media "^5.0.0"
     postcss-custom-properties "^5.0.0"
@@ -4497,7 +4522,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.1.1, postcss@^5.2.5:
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.1.1, postcss@^5.2.0, postcss@^5.2.5:
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.6.tgz#a252cd67cd52585035f17e9ad12b35137a7bdd9e"
   dependencies:
@@ -5733,9 +5758,9 @@ tsickle@^0.1.7:
     source-map "^0.4.2"
     source-map-support "^0.3.1"
 
-tslint-loader@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/tslint-loader/-/tslint-loader-3.2.0.tgz#de6f842a8ea4aa1c4ab995b670b95a1f54845821"
+tslint-loader@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/tslint-loader/-/tslint-loader-3.2.1.tgz#68f39ad778f2c38521a76f16b1980757225d5e69"
   dependencies:
     loader-utils "^0.2.7"
     mkdirp "^0.5.1"
@@ -5837,6 +5862,13 @@ uniqid@^4.0.0:
 uniqs@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
+
+units-css@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/units-css/-/units-css-0.4.0.tgz#d6228653a51983d7c16ff28f8b9dc3b1ffed3a07"
+  dependencies:
+    isnumeric "^0.2.0"
+    viewport-dimensions "^0.2.0"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -5968,6 +6000,10 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
+viewport-dimensions@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/viewport-dimensions/-/viewport-dimensions-0.2.0.tgz#de740747db5387fd1725f5175e91bac76afdf36c"
+
 vinyl@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/vinyl/-/vinyl-0.5.3.tgz#b0455b38fc5e0cf30d4325132e461970c2091cde"
@@ -6071,10 +6107,11 @@ webpack-dev-server@^2.1.0-beta.11:
     webpack-dev-middleware "^1.4.0"
     yargs "^6.0.0"
 
-webpack-merge@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-1.0.1.tgz#d8dd735edf1419b922d154ec9a192854e6ed4e0e"
+webpack-merge@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-1.0.2.tgz#b28f4c895361f1a985a96952760d7170679779b4"
   dependencies:
+    lodash.clonedeep "^4.5.0"
     lodash.differencewith "^4.5.0"
     lodash.isequal "^4.4.0"
     lodash.isfunction "^3.0.8"

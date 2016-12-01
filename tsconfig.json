@@ -20,6 +20,7 @@
     "coverage",
     "config",
     "dist",
+    "src/main-ngc.ts",
     "report"
   ]
 }
