@@ -15,7 +15,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      './config/test/karma-test-shim.js': ['coverage', 'webpack']
+      './config/test/karma-test-shim.js': ['webpack', 'sourcemap']
     },
 
     webpack: webpackConfig,
@@ -39,7 +39,7 @@ module.exports = function (config) {
       'lcovonly': './coverage/lcov.info'
     },
 
-    reporters: ['progress', 'coverage', 'remap-coverage'],
+    reporters: ['progress', 'remap-coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
@@ -47,6 +47,11 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     singleRun: config.ci
   };
+
+  if (config.ci) {
+    _config.preprocessors['./config/test/karma-test-shim.js'].unshift('coverage');
+    _config.reporters.push('coverage');
+  }
 
   config.set(_config);
 };
