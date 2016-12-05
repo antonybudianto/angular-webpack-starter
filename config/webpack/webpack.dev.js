@@ -54,7 +54,7 @@ module.exports = webpackMerge(commonConfig, {
       {
         test: /\.ts$/,
         loaders: [
-          'angular2-router-loader?loader=system&genDir=src&aot=' + isProd
+          'angular-router-loader?loader=system&genDir=src&aot=' + isProd
         ],
         exclude: [
           /node_modules/
