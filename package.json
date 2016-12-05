@@ -67,7 +67,7 @@
     "@types/jasmine": "2.5.38",
     "@types/lodash": "4.14.41",
     "@types/node": "6.0.51",
-    "angular2-router-loader": "^0.3.4",
+    "angular-router-loader": "^0.4.0",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "2.2.4",
     "bootstrap": "^3.3.7",
