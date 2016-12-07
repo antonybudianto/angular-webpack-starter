@@ -22,10 +22,6 @@ module.exports = webpackMerge(commonConfig, {
     ]
   },
 
-  entry: {
-    'app': './src/main-ngc.ts'
-  },
-
   output: {
     path: helpers.root('dist'),
     filename: '[name].[hash].js',
@@ -34,8 +30,8 @@ module.exports = webpackMerge(commonConfig, {
 
   plugins: [
     new ngtools.AotPlugin({
-      tsConfigPath: 'src/tsconfig-aot.json',
-      typeCheck: false
+      tsConfigPath: "./src/tsconfig-aot.json",
+      mainPath: "main.ts"
     }),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),

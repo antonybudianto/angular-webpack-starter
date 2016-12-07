@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const chalk = require('chalk');
 const env = require('dotenv').config({ silent: true });
 const _ = require('lodash');
 
@@ -10,7 +11,8 @@ if (!envMap.APP_ENV) {
   envMap.APP_ENV = '"development"';
   console.log('APP_ENV is not set in your .env, it will default to "development"');
 } else {
-  console.log('APP_ENV is ' + envMap.APP_ENV);
+  const color = constants.ENV_COLOR[env.APP_ENV] || 'bgMagenta';
+  console.log('APP_ENV is ' + chalk[color]('%s'), envMap.APP_ENV);
 }
 
 module.exports = {
