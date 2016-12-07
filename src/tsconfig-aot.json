@@ -20,16 +20,11 @@
   },
   "exclude": [
     "**/*.spec.ts",
-    "main-ngc.ts",
     "main.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,
     "forkChecker": true,
     "useCache": true
-  },
-  "angularCompilerOptions": {
-   "entryModule": "./src/app/app.module#AppModule",
-   "skipMetadataEmit" : true
- }
+  }
 }
