@@ -27,6 +27,8 @@ test_script:
   # Output useful info for debugging.
   - node --version && npm --version
   - node -e 'console.log(process.env);'
+  - cmd: xcopy config\internal\.env.travis * /y /c
+  - cmd: ren ".env.travis" ".env"
   # We test multiple Windows shells because of prior stdout buffering issues
   # filed against Grunt. https://github.com/joyent/node/issues/3584
   - ps: "npm test -- --ci # PowerShell" # Pass comment to PS for easier debugging
