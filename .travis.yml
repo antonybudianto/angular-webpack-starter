@@ -12,6 +12,7 @@ script:
   - cp config/internal/.env.travis .env
   - npm run stat
   - npm test -- --ci
+  - npm prune --production
   - npm run build
 after_script:
   - yarn add coveralls
