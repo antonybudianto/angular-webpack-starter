@@ -13,6 +13,7 @@ script:
   - npm run stat
   - npm test -- --ci
   - npm prune --production
+  - npm run build:jit
   - npm run build
 after_script:
   - yarn add coveralls
