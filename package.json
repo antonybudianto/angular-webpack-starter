@@ -25,6 +25,7 @@
     "build": "webpack --config config/webpack/webpack.prod.js --progress --profile --bail",
     "serve:build": "run-s build serve",
     "build:dll": "webpack --config config/webpack/webpack.dll.js --progress --profile --bail",
+    "build:jit": "webpack --config config/webpack/webpack.prod-jit.js --progress --profile --bail",
     "clean": "run-p clean:*",
     "clean:build": "rimraf dist",
     "clean:coverage": "rimraf coverage",
