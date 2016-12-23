@@ -6044,9 +6044,9 @@ webpack-dev-server@^2.1.0-beta.11:
     webpack-dev-middleware "^1.4.0"
     yargs "^6.0.0"
 
-webpack-merge@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-1.1.2.tgz#49f2a68ba5fd34bb13c338c184c7028d93843432"
+webpack-merge@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-2.0.0.tgz#fd328707d26f6f9852be2767557cef51d942c1dc"
   dependencies:
     lodash.clonedeep "^4.5.0"
     lodash.differencewith "^4.5.0"
