@@ -16,6 +16,9 @@ if (!envMap.APP_ENV) {
 }
 
 module.exports = {
+  performance: {
+    hints: false
+  },
   resolve: {
     extensions: ['.js', '.ts'],
     modules: ['node_modules', helpers.root('src')]
