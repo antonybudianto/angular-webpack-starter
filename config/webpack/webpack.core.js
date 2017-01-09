@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const chalk = require('chalk');
-const env = require('dotenv').config({ silent: true });
+const env = require('dotenv').config().parsed;
 const _ = require('lodash');
 
 const constants = require('./constants');
