@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const chalk = require('chalk');
-const env = require('dotenv').config({ silent: true });
+const env = require('dotenv').config().parsed;
 const _ = require('lodash');
 
 const constants = require('./constants');
@@ -16,6 +16,9 @@ if (!envMap.APP_ENV) {
 }
 
 module.exports = {
+  performance: {
+    hints: false
+  },
   resolve: {
     extensions: ['.js', '.ts'],
     modules: ['node_modules', helpers.root('src')]
