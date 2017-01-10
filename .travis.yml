@@ -7,7 +7,7 @@ node_js:
   - "7.0"
   - "6.0"
   - "5.6"
-  - "4.3"
+  - "4.6"
 script:
   - cp config/internal/.env.travis .env
   - npm run stat
