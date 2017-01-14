@@ -64,7 +64,7 @@
     "@angular/platform-browser": "2.4.3",
     "@angular/platform-browser-dynamic": "2.4.3",
     "@angular/router": "3.4.3",
-    "@ngtools/webpack": "1.2.1",
+    "@ngtools/webpack": "1.2.3",
     "@types/core-js": "0.9.35",
     "@types/jasmine": "2.5.40",
     "@types/lodash": "4.14.48",
@@ -80,7 +80,7 @@
     "core-js": "^2.4.1",
     "css-loader": "^0.26.1",
     "dotenv": "^4.0.0",
-    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
     "file-loader": "^0.9.0",
     "font-awesome": "^4.7.0",
     "html-loader": "^0.4.4",
@@ -94,7 +94,7 @@
     "karma-phantomjs-launcher": "~1.0.2",
     "karma-remap-coverage": "0.1.4",
     "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "1.8.1",
+    "karma-webpack": "2.0.1",
     "lodash": "^4.17.4",
     "npm-run-all": "^4.0.0",
     "null-loader": "^0.1.1",
@@ -109,9 +109,9 @@
     "tslint": "4.3.1",
     "tslint-loader": "^3.3.0",
     "typescript": "2.1.5",
-    "webpack": "2.1.0-beta.28",
+    "webpack": "2.2.0-rc.3",
     "webpack-merge": "2.4.0",
-    "zone.js": "^0.7.4"
+    "zone.js": "^0.7.5"
   },
   "devDependencies": {
     "@angularclass/hmr": "^1.2.2",
@@ -124,6 +124,6 @@
     "protractor": "4.0.14",
     "ts-node": "^2.0.0",
     "webpack-dashboard": "^0.2.1",
-    "webpack-dev-server": "^2.1.0-beta.11"
+    "webpack-dev-server": "2.2.0-rc.0"
   }
 }
