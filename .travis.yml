@@ -6,8 +6,8 @@ language: node_js
 node_js:
   - "7.0"
   - "6.0"
-  - "5.6"
-  - "4.6"
+  - "5.10"
+  - "4.7"
 script:
   - cp config/internal/.env.travis .env
   - npm run stat
