@@ -111,7 +111,7 @@
     "typescript": "2.1.5",
     "webpack": "2.2.0",
     "webpack-merge": "2.4.0",
-    "zone.js": "^0.7.5"
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "@angularclass/hmr": "^1.2.2",
