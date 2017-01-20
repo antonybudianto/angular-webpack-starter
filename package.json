@@ -9,7 +9,7 @@
     "url": "https://github.com/antonybudianto/angular-webpack-starter.git"
   },
   "engines": {
-    "node": ">=4.3",
+    "node": ">=4.7",
     "npm": "~3.0.0"
   },
   "scripts": {
@@ -55,19 +55,19 @@
     "url": "https://github.com/antonybudianto/angular-webpack-starter/issues"
   },
   "dependencies": {
-    "@angular/common": "2.4.3",
-    "@angular/compiler": "2.4.3",
-    "@angular/compiler-cli": "2.4.3",
-    "@angular/core": "2.4.3",
-    "@angular/forms": "2.4.3",
-    "@angular/http": "2.4.3",
-    "@angular/platform-browser": "2.4.3",
-    "@angular/platform-browser-dynamic": "2.4.3",
-    "@angular/router": "3.4.3",
-    "@ngtools/webpack": "1.2.3",
+    "@angular/common": "2.4.4",
+    "@angular/compiler": "2.4.4",
+    "@angular/compiler-cli": "2.4.4",
+    "@angular/core": "2.4.4",
+    "@angular/forms": "2.4.4",
+    "@angular/http": "2.4.4",
+    "@angular/platform-browser": "2.4.4",
+    "@angular/platform-browser-dynamic": "2.4.4",
+    "@angular/router": "3.4.4",
+    "@ngtools/webpack": "1.2.4",
     "@types/core-js": "0.9.35",
-    "@types/jasmine": "2.5.40",
-    "@types/lodash": "4.14.48",
+    "@types/jasmine": "2.5.41",
+    "@types/lodash": "4.14.50",
     "@types/node": "7.0.0",
     "angular-router-loader": "^0.5.0",
     "angular2-template-loader": "^0.6.0",
@@ -88,7 +88,7 @@
     "istanbul-instrumenter-loader": "1.2.0",
     "jasmine-core": "~2.5.2",
     "jquery": "^3.1.1",
-    "karma": "~1.3.0",
+    "karma": "~1.4.0",
     "karma-coverage": "~1.1.1",
     "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "~1.0.2",
@@ -96,7 +96,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "2.0.1",
     "lodash": "^4.17.4",
-    "npm-run-all": "^4.0.0",
+    "npm-run-all": "^4.0.1",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.14",
     "postcss-cssnext": "^2.9.0",
@@ -109,9 +109,9 @@
     "tslint": "4.3.1",
     "tslint-loader": "^3.3.0",
     "typescript": "2.1.5",
-    "webpack": "2.2.0-rc.3",
+    "webpack": "2.2.0",
     "webpack-merge": "2.4.0",
-    "zone.js": "^0.7.5"
+    "zone.js": "^0.7.6"
   },
   "devDependencies": {
     "@angularclass/hmr": "^1.2.2",
@@ -124,6 +124,6 @@
     "protractor": "4.0.14",
     "ts-node": "^2.0.0",
     "webpack-dashboard": "^0.2.1",
-    "webpack-dev-server": "2.2.0-rc.0"
+    "webpack-dev-server": "2.2.0"
   }
 }

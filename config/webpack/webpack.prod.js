@@ -33,7 +33,7 @@ module.exports = webpackMerge(commonConfig, {
       tsConfigPath: "./src/tsconfig-aot.json",
       mainPath: "main.ts"
     }),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin({
       filename: '[name].[hash].css',
