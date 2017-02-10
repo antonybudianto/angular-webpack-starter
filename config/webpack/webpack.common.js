@@ -42,8 +42,8 @@ module.exports = webpackMerge(coreConfig, {
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin
           .extract({
-              fallbackLoader: "style-loader",
-              loader: ['css-loader' + (isProd ? '?minimize' : ''), 'postcss-loader']
+              fallback: "style-loader",
+              use: ['css-loader' + (isProd ? '?minimize' : ''), 'postcss-loader']
           })
       },
       {
