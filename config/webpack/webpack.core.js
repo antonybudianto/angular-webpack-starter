@@ -32,10 +32,10 @@ module.exports = {
         $: 'jquery',
         jquery: 'jquery'
     }),
-    new webpack.ContextReplacementPlugin(
-      // The (\\|\/) piece accounts for path separators in *nix and Windows
-      constants.CONTEXT_REPLACE_REGEX,
-      helpers.root('./src') // location of your src
-    )
+    // new webpack.ContextReplacementPlugin(
+    //   // The (\\|\/) piece accounts for path separators in *nix and Windows
+    //   constants.CONTEXT_REPLACE_REGEX,
+    //   helpers.root('./src') // location of your src
+    // )
   ]
 };
