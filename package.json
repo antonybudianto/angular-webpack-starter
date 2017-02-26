@@ -116,12 +116,10 @@
   "devDependencies": {
     "@angularclass/hmr": "^1.2.2",
     "@angularclass/hmr-loader": "^3.0.2",
-    "@types/protractor": "1.5.20",
-    "@types/selenium-webdriver": "2.44.28",
     "add-asset-html-webpack-plugin": "^1.0.2",
     "compression": "^1.6.2",
     "lite-server": "^2.2.2",
-    "protractor": "4.0.14",
+    "protractor": "5.1.1",
     "ts-node": "^2.1.0",
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "2.4.1"
