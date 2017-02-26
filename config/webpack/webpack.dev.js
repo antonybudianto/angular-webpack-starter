@@ -86,6 +86,7 @@ module.exports = webpackMerge(commonConfig, {
 
   devServer: {
     hot: true,
+    overlay: true,
     contentBase: './src/public',
     historyApiFallback: true,
     stats: 'minimal'
