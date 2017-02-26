@@ -39,7 +39,7 @@ Please visit the [wiki](https://github.com/antonybudianto/angular-webpack-starte
 
 ## Prerequisites
 You need to have [Node.js and npm](https://nodejs.org/en/)
-- Support Node v4 - latest
+- Support Node v6.9 - latest
 - Support npm v3 - latest
 - Support [Yarn](https://yarnpkg.com/)
 
