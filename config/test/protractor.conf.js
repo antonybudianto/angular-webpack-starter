@@ -1,4 +1,6 @@
-require('ts-node/register');
+require('ts-node').register({
+  project: 'tsconfig-e2e.json'
+});
 
 var helpers = require('../webpack/helpers');
 
