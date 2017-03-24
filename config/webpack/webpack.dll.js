@@ -3,6 +3,7 @@ const webpackMerge = require('webpack-merge');
 
 const coreconfig = require('./webpack.core');
 const constants = require('./constants');
+const helpers = require('./helpers');
 
 module.exports = webpackMerge(coreconfig, {
   entry: {
@@ -12,7 +13,7 @@ module.exports = webpackMerge(coreconfig, {
 
   output: {
     filename: '[name].dll.js',
-    path: constants.DLL_DIST + '/',
+    path: helpers.root(constants.DLL_DIST),
 
     // The name of the global variable which the library's
     // require() function will be assigned to
