@@ -1,7 +1,6 @@
 # Angular Webpack Starter
 
 [![Build Status](https://travis-ci.org/antonybudianto/angular-webpack-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/angular-webpack-starter)
-[![Build status](https://ci.appveyor.com/api/projects/status/d5b3a9nnxnv5bxa5/branch/master?svg=true)](https://ci.appveyor.com/project/antonybudianto/angular-webpack-starter/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/antonybudianto/angular-webpack-starter/badge.svg?branch=master)](https://coveralls.io/github/antonybudianto/angular-webpack-starter?branch=master)
 [![Dependency Status](https://david-dm.org/antonybudianto/angular-webpack-starter.svg)](https://david-dm.org/antonybudianto/angular-webpack-starter)
 [![devDependency Status](https://david-dm.org/antonybudianto/angular-webpack-starter/dev-status.svg)](https://david-dm.org/antonybudianto/angular-webpack-starter#info=devDependencies)
@@ -13,7 +12,7 @@
 Welcome to Angular Webpack Starter!
 This starter contains almost everything you need to start developing [Angular](https://angular.io/).
 
-> This repo is evolved from [Angular 2 Starter](https://github.com/antonybudianto/angular2-starter)
+> This repo is evolved from [Angular Starter](https://github.com/antonybudianto/angular-starter)
 
 ### Why choose this starter?
 - Extensible via [ngstarter extensions](https://github.com/ngstarter)
