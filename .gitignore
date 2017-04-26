@@ -1,11 +1,11 @@
 .env
+.DS_Store
+node_modules
 npm-debug.log
-.idea/
-.vscode/
+/.idea
+/.vscode
+/.awcache
 /coverage
-/node_modules
-/bower_components
 /dist
 /dll-dist
 /typings
-.DS_Store

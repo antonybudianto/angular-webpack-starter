@@ -13,7 +13,10 @@
     ]
   },
   "awesomeTypescriptLoaderOptions": {
-    "useWebpackText": true
+    "useWebpackText": true,
+    "forkChecker": true,
+    "useCache": true,
+    "usePrecompiledFiles": true
   },
   "exclude": [
     "node_modules",
