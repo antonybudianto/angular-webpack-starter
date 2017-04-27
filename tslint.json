@@ -38,7 +38,6 @@
     "trailing-comma": [true],
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [true,
@@ -66,8 +65,8 @@
       "check-separator",
       "check-type"
     ],
-    "directive-selector": [true, "attribute", ["app"], "camelCase"],
-    "component-selector": [true, "element", ["app"], "kebab-case"],
+    "directive-selector": [true, ["attribute", "element"], "app", "camelCase"],
+    "component-selector": [true, ["element", "attribute"], "app", "kebab-case"],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,

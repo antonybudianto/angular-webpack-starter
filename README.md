@@ -1,7 +1,7 @@
 # Angular Webpack Starter
 
 [![Build Status](https://travis-ci.org/antonybudianto/angular-webpack-starter.svg?branch=master)](https://travis-ci.org/antonybudianto/angular-webpack-starter)
-[![Coverage Status](https://coveralls.io/repos/github/antonybudianto/angular-webpack-starter/badge.svg?branch=master)](https://coveralls.io/github/antonybudianto/angular-webpack-starter?branch=master)
+[![Codecov](https://codecov.io/gh/antonybudianto/angular-webpack-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/antonybudianto/angular-webpack-starter)
 [![Dependency Status](https://david-dm.org/antonybudianto/angular-webpack-starter.svg)](https://david-dm.org/antonybudianto/angular-webpack-starter)
 [![devDependency Status](https://david-dm.org/antonybudianto/angular-webpack-starter/dev-status.svg)](https://david-dm.org/antonybudianto/angular-webpack-starter#info=devDependencies)
 [![Dependency Status](https://dependencyci.com/github/antonybudianto/angular-webpack-starter/badge)](https://dependencyci.com/github/antonybudianto/angular-webpack-starter)
