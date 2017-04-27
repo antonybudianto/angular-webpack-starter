@@ -11,6 +11,6 @@ script:
   - npm run build:jit
   - npm run build
 after_script:
-  - yarn add coveralls
-  - npm run coveralls
+  - yarn global add codecov
+  - codecov
 cache: yarn
