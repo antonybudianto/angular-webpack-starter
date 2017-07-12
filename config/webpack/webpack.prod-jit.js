@@ -76,6 +76,7 @@ module.exports = webpackMerge(commonConfig, {
         from: './src/public/images',
         to: './images'
       }
-    ])
+    ]),
+    new webpack.optimize.ModuleConcatenationPlugin()
   ]
 });
